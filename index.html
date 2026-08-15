@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#073f27" />
+    <meta name="description" content="射門機：40 秒快速射門，瞄準遠角避開移動門將。" />
+    <title>射門機</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="marquee">
+        <p class="kicker">SUPER KICK</p>
+        <h1>射門機</h1>
+        <p>瞄準遠角 · 閃過門將 · 連續破網</p>
+      </header>
+
+      <section class="scoreboard" aria-label="比賽資訊">
+        <div><span>分數</span><strong id="score">0000</strong></div>
+        <div><span>連進</span><strong id="combo">×0</strong></div>
+        <div><span>時間</span><strong id="time">40</strong></div>
+        <div><span>最佳</span><strong id="best">0</strong></div>
+      </section>
+
+      <p id="status" class="status" role="status">按「開始射門」開球</p>
+
+      <section class="cabinet">
+        <canvas id="game" width="360" height="520" aria-label="射門機足球場"></canvas>
+        <div class="power" aria-label="力道表"><span id="power-fill"></span></div>
+      </section>
+
+      <div class="controls">
+        <button id="start" class="start" type="button">開始射門</button>
+        <button id="mute" class="mute" type="button" aria-pressed="false">音效開</button>
+      </div>
+
+      <details>
+        <summary>玩法</summary>
+        <ol>
+          <li>按住球場拖向想射的左、右角，放手起腳。</li>
+          <li>拖曳距離控制力道；球越快，門將越難攔。</li>
+          <li>觀察來回移動的門將，連續進球可把倍率提高到 5 倍。</li>
+        </ol>
+      </details>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
