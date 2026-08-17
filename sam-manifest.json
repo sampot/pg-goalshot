@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rev": "435f16f",
+  "files": [
+    "app.js",
+    "assets/art/ball_soccer1.png",
+    "assets/art/ball_soccer2.png",
+    "assets/art/ball_soccer3.png",
+    "assets/sfx/click1.ogg",
+    "assets/sfx/switch1.ogg",
+    "audio.js",
+    "functions.js",
+    "game.js",
+    "index.html",
+    "styles.css"
+  ]
+}
